@@ -1,0 +1,41 @@
+import java.lang.*;
+
+public class BoxExtra {
+    private float centerPointX;
+    private float centerPointY;
+    private float radius;
+
+    public void setCenterPointX(float x)  {
+        centerPointX =x;
+
+    }
+    public void setCenterPointY(float y)  {
+        centerPointY =y;
+
+    }
+    public void setRadius(float r)  {
+        radius =r;
+
+    }
+    public float getCenterPointX()  {
+        return centerPointX ;
+
+    }
+    public float getCenterPointY()  {
+        return centerPointY ;
+
+    }
+    public float getRadius()  {
+        return radius ;
+
+    }
+
+    public static void main(String[] args) {
+        BoxExtra obj = new BoxExtra();
+        obj.setCenterPointX(10.284F);
+        obj.setCenterPointY(50.521F);
+        obj.setRadius(6.808F);
+        System.out.println("The following Circle's Data: center(" + obj.getCenterPointX()+"," + obj.getCenterPointY() + ") and radius("+ obj.getRadius() +")");
+
+    }
+}

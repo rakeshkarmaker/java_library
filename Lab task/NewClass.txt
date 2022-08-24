@@ -1,0 +1,53 @@
+import java.lang.*;
+
+public class NewClass {
+
+    public static void main(String[] args) {
+        byte b1 = 5;
+        byte b2 = 3;
+
+        short s1 = 362;
+        short s2 = 492;
+
+        int i1 = 29999;
+        int i2 = 14999;
+
+        long l1 = 134513532145234553L;
+
+        float f1 = 15.5F;
+        float f2 = 21.4F;
+        float f3 = 13.6F;
+
+        double d1 = 153.2452345234525E-1;
+
+        boolean bool1 = true;
+        char c1 = 'G';
+
+        int newInt = s1;
+        double newDouble = f2;
+        int newInt2 = c1;
+        long newLong = i1;
+        short newShort = b1;
+
+        System.out.println("These are Implicit Type casting:");
+
+        System.out.println("Short to Int: "+newInt);
+        System.out.println("Float to Double: "+newDouble);
+        System.out.println("Char to Int: "+newInt2);
+        System.out.println("Int to Long: "+newLong);
+        System.out.println("Boolean to Short: "+newShort);
+
+
+        int Int2 = (int) l1;
+        byte newByte = (byte) f1;
+        short Short1 = (short)  d1;
+        char newChar1 = (char) i2;
+
+        System.out.println("These are Explicit Type casting:");
+
+        System.out.println("Long to Int: " + Int2);
+        System.out.println("Float to byte: " + newByte);
+        System.out.println("Double to short: " + Short1);
+        System.out.println("Long to Int: " + newChar1);
+    }
+}
